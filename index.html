@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/theme/monokai.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Web Code Editor</h1>
+        <div class="editor-container">
+            <div class="editor" id="html-editor">
+                <h3>HTML</h3>
+                <textarea id="html-code"></textarea>
+            </div>
+            <div class="editor" id="css-editor">
+                <h3>CSS</h3>
+                <textarea id="css-code"></textarea>
+            </div>
+            <div class="editor" id="js-editor">
+                <h3>JavaScript</h3>
+                <textarea id="js-code"></textarea>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="run-btn">Run Code</button>
+            <button id="save-btn">Save Snippet</button>
+        </div>
+
+        <div class="preview-container">
+            <h3>Output</h3>
+            <iframe id="preview" class="preview-frame"></iframe>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/css/css.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- Footer Section -->
+<footer class="footer">
+    &copy; 2024 <a href="https://imtahirnaseer.github.io/Portfolio/" target="_blank" class="footer-link">Tahir Naseer</a> All rights reserved.
+</footer>
